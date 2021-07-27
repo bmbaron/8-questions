@@ -31,7 +31,16 @@ async function chooseQuestion () {
             await timer(200);
             questions[i].classList.toggle('flipped');
             await timer(2000);
+            
+            let action = 'sing';
             chooseAction();
+
+            await timer(1000);
+            switch (action) {
+                case 'sing':
+                    //questions[i].childNodes[3].innerHTML += "</br> <strong> (sing) </strong>";
+                    break;
+            }
             await timer(3000);
             questions[i].classList.toggle('flipped');
             questions[i].style.backgroundColor = "rgb(6, 163, 216)";
@@ -46,6 +55,7 @@ async function chooseQuestion () {
 async function chooseAction () {
     let randomAct = Math.floor(Math.random()*3);
     actions[randomAct].classList.toggle('action-chosen');
-    await timer(3000);
+    await timer(1000);
     actions[randomAct].classList.toggle('action-chosen');
+    return 'sing';
    }
