@@ -1,0 +1,105 @@
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
+  <link href="styles/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="topbar"> hello
+    <div class="logo"> </div>
+  </div>
+
+
+  <div class="main-container">
+    <div class="grid-container">
+      <div class="row-1">
+        <div class="question" id="one" onclick="flip();">
+          <h1>1</h1>
+          <p>How many people are in your family?</p>
+        </div>
+        <div class="question">
+          <h1>2</h1>
+          <p>What's your favorite color?</p>
+        </div>
+        <div class="question">
+          <h1>3</h1>
+          <p>How old are you?</p>
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="question">
+          <h1>4</h1>
+          <p>What's your favorite food?</p>
+        </div>
+        <div class="start-button" id="start-button">
+          <h1>START</h1>
+        </div>
+        <div class="question">
+          <h1>5</h1>
+          <p>What's your favorite animal?</p>
+        </div>
+      </div>
+      <div class="row-3">
+        <div class="question">
+          <h1>6</h1>
+          <p>How are you?</p>
+        </div>
+        <div class="question" id="seven" onclick="flip();">
+          <h1>7</h1>
+          <p>What's your name?</p>
+        </div>
+        <div class="question">
+          <h1>8</h1>
+          <p>Where are you from?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lower-container">
+    <div class="actions-container">
+      <div class="action">
+        <h1>
+          <span class="material-icons md-48">
+            music_note
+            </span>
+        </h1>
+      </div>
+      <div class="action">
+        <h1>
+         <span class="material-icons md-48">
+            accessibility
+            </span> 
+        </h1>
+      </div>
+      <div class="action">
+        <h1>
+          <span class="material-icons md-48">
+            sports_soccer
+            </span>      
+        </h1>
+      </div>
+    </div>
+  </div>
+  <div class="footer" id="footer">
+  </div>
+
+  <script src="scripts/main.js"></script>
+
+  <script>
+    function flip () {
+      var element = document.getElementById("one");
+      var element2 = document.getElementById("seven");
+      element.classList.toggle("flipped");
+      element2.classList.toggle("flipped");
+    }
+  </script>
+</body>
+
+
+
+
+
