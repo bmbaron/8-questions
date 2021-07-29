@@ -167,6 +167,9 @@ body {
   .flipped p {
     font-size: 3rem;
   }
+  .start-button {
+    font-size: 1rem;
+  }
 }
 
 
